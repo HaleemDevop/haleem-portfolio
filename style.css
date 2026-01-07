@@ -1,4 +1,4 @@
-/* ===== RESET ===== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,14 @@
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ===== BODY ===== */
+/* BODY */
 body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
   line-height: 1.6;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero {
   min-height: 100vh;
   text-align: center;
@@ -22,33 +22,19 @@ body {
 
 .hero h1 {
   font-size: 3rem;
-  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .hero p {
-  font-size: 1.3rem;
-  margin: 15px 0;
-  opacity: 0.9;
+  margin-top: 15px;
+  font-size: 1.1rem;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 30px;
-  background: #00d4ff;
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #00ffcc;
-  transform: scale(1.1);
-}
-
-/* ===== ANIMATIONS ===== */
+/* ANIMATIONS */
 .fade-in {
   animation: fadeIn 1.8s ease forwards;
 }
@@ -67,50 +53,45 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 section {
   padding: 70px 10%;
 }
 
 h2 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 30px;
-  position: relative;
 }
 
 h2::after {
   content: "";
-  display: block;
   width: 60px;
   height: 3px;
   background: #00d4ff;
-  margin: 10px auto 0;
+  display: block;
+  margin: 10px auto;
 }
 
-/* ===== ABOUT ===== */
+/* ABOUT */
 .about p {
   max-width: 800px;
   margin: auto;
   text-align: center;
-  font-size: 1.05rem;
-  opacity: 0.95;
 }
 
-/* ===== SKILLS ===== */
+/* SKILLS */
 .skill-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
 }
 
 .skill-grid span {
-  background: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.15);
   padding: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .skill-grid span:hover {
@@ -119,9 +100,8 @@ h2::after {
   transform: translateY(-6px);
 }
 
-/* ===== PROJECTS & ACADEMIC ===== */
-.projects,
-.academic {
+/* PROJECTS */
+.projects {
   background: rgba(0,0,0,0.35);
 }
 
@@ -129,23 +109,13 @@ h2::after {
   background: rgba(255,255,255,0.1);
   padding: 22px;
   border-radius: 16px;
-  margin-bottom: 20px;
-  transition: all 0.4s ease;
+  max-width: 800px;
+  margin: auto;
 }
 
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-}
-
-/* ===== CONTACT ===== */
-.contact p {
+/* CONTACT */
+.contact {
   text-align: center;
-  margin: 8px 0;
 }
 
 .contact a {
@@ -153,30 +123,9 @@ h2::after {
   text-decoration: none;
 }
 
-.contact a:hover {
-  text-decoration: underline;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
   background: #000;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  section {
-    padding: 50px 6%;
-  }
 }
