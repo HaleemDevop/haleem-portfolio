@@ -5,137 +5,124 @@
   <title>Mohamed Haleem J | Java Full Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS LINK (MUST be inside <head>) -->
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER / HERO -->
+  <!-- HERO -->
   <header class="hero">
-    <h1 class="fade-in">Mohamed Haleem J</h1>
-    <h2 class="slide-in">Java Full Stack Developer</h2>
-    <p>Java • Spring Boot • Hibernate • MySQL • HTML • CSS • JavaScript</p>
+    <div class="hero-content">
+      <h1 class="reveal">Mohamed Haleem J</h1>
+      <h2 class="reveal delay">Java Full Stack Developer</h2>
+      <p class="reveal delay-2">
+        Java • Spring Boot • Hibernate • MySQL • HTML • CSS • JavaScript
+      </p>
+      <div class="hero-buttons reveal delay-3">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
   </header>
 
   <!-- ABOUT -->
-  <section class="section">
+  <section class="section glass reveal">
     <h2>About Me</h2>
-    <p class="center-text">
+    <p>
       Computer Science Engineering graduate with hands-on experience in Java Full Stack
-      development. Skilled in building backend services using Spring Boot and Hibernate,
-      developing responsive front-end interfaces, and integrating databases using MySQL.
-      Interested in entry-level software development roles where I can contribute to
-      scalable and maintainable applications.
+      development. Strong in backend services using Spring Boot and Hibernate, frontend
+      development, and MySQL integration. Passionate about building scalable and
+      maintainable applications.
     </p>
   </section>
 
   <!-- SKILLS -->
-  <section class="section dark">
+  <section class="section dark reveal">
     <h2>Technical Skills</h2>
     <div class="skill-grid">
-      <span>Java</span>
-      <span>Spring Boot</span>
-      <span>Hibernate</span>
-      <span>JDBC</span>
-      <span>REST APIs</span>
-      <span>MySQL</span>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
+      <span>Java</span><span>Spring Boot</span><span>Hibernate</span>
+      <span>JDBC</span><span>REST APIs</span><span>MySQL</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
       <span>Git & GitHub</span>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section">
+  <section id="projects" class="section reveal">
     <h2>Projects</h2>
 
     <div class="card">
       <h3>Banking Management System</h3>
-      <p>
-        Developed a secure banking application to manage customer accounts,
-        transactions, and balance updates.
-      </p>
+      <p>Secure banking application for managing accounts and transactions.</p>
       <ul>
-        <li>Implemented CRUD operations for customers and accounts</li>
-        <li>Designed transaction workflows using Spring Boot and Hibernate</li>
-        <li>Integrated MySQL database for persistent data storage</li>
-        <li>Applied layered architecture for clean code and scalability</li>
+        <li>CRUD operations for customers and accounts</li>
+        <li>Transaction workflows with Spring Boot & Hibernate</li>
+        <li>MySQL for persistent storage</li>
       </ul>
-      <p class="tech"><strong>Technologies:</strong> Java, Spring Boot, Hibernate, JDBC, MySQL</p>
+      <p class="tech">Java • Spring Boot • Hibernate • MySQL</p>
     </div>
 
     <div class="card">
       <h3>Library Management System</h3>
-      <p>
-        Built a Java-based system to automate library operations such as book
-        inventory management, issuing, returns, and fine calculation.
-      </p>
+      <p>Automation system for book inventory, issuing, and fine calculation.</p>
       <ul>
-        <li>Designed database schema for books and users</li>
-        <li>Automated fine calculation to reduce manual errors</li>
-        <li>Used JDBC for efficient database interaction</li>
+        <li>Optimized database schema</li>
+        <li>Automated fine calculation</li>
+        <li>Efficient JDBC usage</li>
       </ul>
-      <p class="tech"><strong>Technologies:</strong> Java, Hibernate, JDBC, MySQL</p>
+      <p class="tech">Java • Hibernate • JDBC • MySQL</p>
     </div>
 
     <div class="card">
       <h3>Online Food Ordering & Delivery System</h3>
-      <p>
-        Developed a full-stack web application that allows users to browse menus,
-        place orders, and enables admins to manage orders and food items.
-      </p>
+      <p>Full-stack platform for browsing menus, placing orders, and admin management.</p>
       <ul>
-        <li>Created responsive UI using HTML, CSS, and JavaScript</li>
-        <li>Developed REST APIs for order and user management</li>
-        <li>Implemented role-based authentication and authorization</li>
+        <li>Responsive frontend UI</li>
+        <li>REST APIs for orders & users</li>
+        <li>Role-based authentication</li>
       </ul>
-      <p class="tech">
-        <strong>Technologies:</strong> Java, Spring Boot, REST APIs, MySQL, HTML, CSS, JavaScript
-      </p>
+      <p class="tech">Spring Boot • REST • MySQL • HTML • CSS • JS</p>
     </div>
   </section>
 
   <!-- ACADEMIC PROJECT -->
-  <section class="section dark">
+  <section class="section dark reveal">
     <h2>Academic Project</h2>
-
     <div class="card">
-      <h3>Advanced Learning Model for Rural Education Through Augmented Reality</h3>
-      <p>
-        Academic project aimed at improving learning effectiveness for rural students
-        through AR-based interactive learning modules.
-      </p>
+      <h3>AR Learning Model for Rural Education</h3>
       <ul>
-        <li>Designed 3D AR modules to visualize academic concepts</li>
-        <li>Improved student engagement and concept understanding</li>
-        <li>Evaluated system effectiveness with rural learners</li>
+        <li>3D AR learning modules</li>
+        <li>Improved student engagement</li>
+        <li>Rural student evaluations</li>
       </ul>
-      <p class="tech"><strong>Technologies:</strong> Unity, Vuforia, C#</p>
+      <p class="tech">Unity • Vuforia • C#</p>
     </div>
   </section>
 
   <!-- INTERNSHIP -->
-  <section class="section">
-    <h2>Internship Experience</h2>
+  <section class="section reveal">
+    <h2>Internship</h2>
     <div class="card">
-      <h3>Software Development Intern – Vebbox Software Solutions</h3>
-      <p><strong>Jan 2024 – Jun 2024</strong></p>
+      <h3>Software Development Intern – Vebbox</h3>
+      <p>Jan 2024 – Jun 2024</p>
       <ul>
-        <li>Supported development of Java-based web application modules</li>
-        <li>Improved UI components using HTML, CSS, and JavaScript</li>
-        <li>Collaborated with developers to test and resolve functional issues</li>
+        <li>Java web application modules</li>
+        <li>Frontend improvements</li>
+        <li>Bug fixing & testing</li>
       </ul>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section dark">
+  <section id="contact" class="section dark reveal">
     <h2>Contact</h2>
-    <p class="center-text">
-      Email: <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a><br>
-      Phone: 8610866166<br>
-      GitHub: <a href="https://github.com/HaleemDevop" target="_blank">github.com/HaleemDevop</a>
+    <p>
+      📧 <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a><br>
+      📞 8610866166<br>
+      🔗 <a href="https://github.com/HaleemDevop" target="_blank">GitHub</a>
     </p>
   </section>
 
@@ -143,5 +130,6 @@
     © 2026 Mohamed Haleem J
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
