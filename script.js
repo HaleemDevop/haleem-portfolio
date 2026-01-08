@@ -1,11 +1,16 @@
-const reveals = document.querySelectorAll(".reveal");
+const sections = document.querySelectorAll(".glass");
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("active");
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.2 });
 
-reveals.forEach(el => observer.observe(el));
+sections.forEach(sec => {
+  sec.style.opacity = 0;
+  sec.style.transform = "translateY(30px)";
+  observer.observe(sec);
+});
