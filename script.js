@@ -1,26 +1,16 @@
 const cards = document.querySelectorAll(".floating-card");
 
-cards.forEach(card => {
-  card.addEventListener("mousemove", e => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+cards.forEach((card, index) => {
+  // Arrange cards in semi-circle
+  let angle = (index - (cards.length - 1) / 2) * 20; // spacing
+  card.style.transform = `rotateY(${angle}deg) translateZ(120px)`;
 
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = -(y - centerY) / 18;
-    const rotateY = (x - centerX) / 18;
-
-    card.style.transform =
-      `perspective(1200px)
-       rotateX(${rotateX}deg)
-       rotateY(${rotateY}deg)
-       translateY(-8px)`;
+  // Hover effect
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = `rotateY(${angle}deg) translateZ(150px) scale(1.05)`;
   });
 
   card.addEventListener("mouseleave", () => {
-    card.style.transform =
-      "perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(0)";
+    card.style.transform = `rotateY(${angle}deg) translateZ(120px)`;
   });
 });
