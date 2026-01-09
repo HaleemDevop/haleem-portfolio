@@ -1,16 +1,12 @@
-const cards = document.querySelectorAll(".floating-card");
+// Optional: hover zoom effect
+const cards = document.querySelectorAll(".card");
 
-cards.forEach((card, index) => {
-  // Arrange cards in semi-circle
-  let angle = (index - (cards.length - 1) / 2) * 20; // spacing
-  card.style.transform = `rotateY(${angle}deg) translateZ(120px)`;
-
-  // Hover effect
+cards.forEach(card => {
   card.addEventListener("mouseenter", () => {
-    card.style.transform = `rotateY(${angle}deg) translateZ(150px) scale(1.05)`;
+    card.style.transform += " scale(1.05)";
   });
-
   card.addEventListener("mouseleave", () => {
-    card.style.transform = `rotateY(${angle}deg) translateZ(120px)`;
+    const index = card.getAttribute("style").match(/--index:(\d+)/)[1];
+    card.style.transform = `rotateY(calc((360deg / var(--quantity)) * ${index})) translateZ(var(--translateZ))`;
   });
 });
