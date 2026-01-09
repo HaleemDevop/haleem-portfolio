@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Mohamed Haleem J | Java Full Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,84 +18,67 @@
     <p class="stack">Java • Spring Boot • Hibernate • MySQL • HTML • CSS • JavaScript</p>
   </header>
 
-  <!-- CONTENT -->
-  <main class="container">
-    <section class="floating-card">
-      <h2>About Me</h2>
-      <p>
-        Computer Science Engineering graduate with hands-on experience in Java Full Stack
-        development. Skilled in building backend services using Spring Boot and Hibernate,
-        developing responsive front-end interfaces, and integrating databases using MySQL.
-        Interested in entry-level software development roles where I can contribute to
-        scalable and maintainable applications.
-      </p>
-    </section>
-
-    <section class="floating-card">
-      <h2>Technical Skills</h2>
-      <div class="chips">
-        <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>JDBC</span>
-        <span>REST APIs</span><span>MySQL</span><span>HTML</span><span>CSS</span>
-        <span>JavaScript</span><span>Git & GitHub</span>
+  <!-- ROTATING CARDS WRAPPER -->
+  <div class="wrapper">
+    <div class="inner" style="--quantity:6; --color-card:0,229,255;">
+      
+      <div class="card" style="--index:0">
+        <section class="floating-card">
+          <h2>About Me</h2>
+          <p>Computer Science Engineering graduate with hands-on experience in Java Full Stack development...</p>
+        </section>
       </div>
-    </section>
 
-    <section class="floating-card">
-      <h2>Projects</h2>
-      <h3>Banking Management System</h3>
-      <ul>
-        <li>Built a Spring Boot application to manage customer accounts and secure transaction processing.</li>
-        <li>Implemented CRUD operations for over 500 transaction records using Hibernate and MySQL.</li>
-        <li>Project features and user interface showcased on personal portfolio website.</li>
-        <li>GitHub Repository: <a href="https://github.com/HaleemDevop" target="_blank">github.com/HaleemDevop</a></li>
-      </ul>
+      <div class="card" style="--index:1">
+        <section class="floating-card">
+          <h2>Technical Skills</h2>
+          <div class="chips">
+            <span>Java</span><span>Spring Boot</span><span>Hibernate</span><span>JDBC</span>
+            <span>REST APIs</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+            <span>JavaScript</span><span>Git & GitHub</span>
+          </div>
+        </section>
+      </div>
 
-      <h3>Library Management System</h3>
-      <ul>
-        <li>Created a Java-based system for managing book inventory, issue tracking, and fine calculation.</li>
-        <li>Reduced data inconsistencies through automated database operations.</li>
-      </ul>
+      <div class="card" style="--index:2">
+        <section class="floating-card">
+          <h2>Projects</h2>
+          <h3>Banking Management System</h3>
+          <ul><li>Built a Spring Boot application...</li></ul>
+        </section>
+      </div>
 
-      <h3>Online Food Ordering and Delivery System</h3>
-      <ul>
-        <li>Engineered a full stack application supporting menu browsing and order placement.</li>
-        <li>Integrated role-based authentication for administrators and customers.</li>
-        <li>Backend services implemented using Spring Boot and MySQL.</li>
-      </ul>
-    </section>
+      <div class="card" style="--index:3">
+        <section class="floating-card">
+          <h2>Academic Project</h2>
+          <h3>AR Learning Model</h3>
+          <ul><li>Designed an AR-based interactive learning model...</li></ul>
+        </section>
+      </div>
 
-    <section class="floating-card">
-      <h2>Academic Project</h2>
-      <h3>Advanced Learning Model for Rural Education Through Augmented Reality</h3>
-      <ul>
-        <li>Designed an AR-based interactive learning model using 3D visual content.</li>
-        <li>Improved accessibility and student engagement.</li>
-        <li>Technologies used: Unity, Vuforia, C#</li>
-      </ul>
-    </section>
+      <div class="card" style="--index:4">
+        <section class="floating-card">
+          <h2>Internship</h2>
+          <h3>Vebbox Software Solutions</h3>
+          <p><strong>Jan 2024 – Jun 2024</strong></p>
+          <ul><li>Contributed to six Java-based modules...</li></ul>
+        </section>
+      </div>
 
-    <section class="floating-card">
-      <h2>Internship Experience</h2>
-      <h3>Vebbox Software Solutions — Software Development Intern</h3>
-      <p><strong>Jan 2024 – Jun 2024</strong></p>
-      <ul>
-        <li>Contributed to six Java-based web application modules.</li>
-        <li>Assisted in frontend and backend integration tasks.</li>
-        <li>Identified and resolved more than 20 functional and data-handling issues.</li>
-      </ul>
-    </section>
+      <div class="card" style="--index:5">
+        <section class="floating-card contact">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a></p>
+          <p>Phone: 8610866166</p>
+          <p>GitHub: <a href="https://github.com/HaleemDevop" target="_blank">github.com/HaleemDevop</a></p>
+        </section>
+      </div>
 
-    <section class="floating-card contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a></p>
-      <p>Phone: 8610866166</p>
-      <p>GitHub: <a href="https://github.com/HaleemDevop" target="_blank">github.com/HaleemDevop</a></p>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <footer>© 2026 Mohamed Haleem J</footer>
 
-  <!-- Link JS -->
   <script src="script.js"></script>
 </body>
 </html>
