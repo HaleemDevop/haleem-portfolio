@@ -2,104 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Mohamed Haleem J | Java Full Stack Developer</title>
+  <title>Mohamed Haleem J | Software Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Your CSS -->
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- BACKGROUND -->
-  <div class="bg-orbs"></div>
+  <!-- Animated Background -->
+  <div class="bg-gradient"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="logo">MHJ</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+  </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <section class="hero">
     <h1>Mohamed Haleem J</h1>
-    <p class="role">Java Full Stack Developer</p>
-    <p class="stack">Java • Spring Boot • Hibernate • MySQL • HTML • CSS • JavaScript</p>
-  </header>
+    <p class="role">Java Full Stack Developer • Entry-Level Software Engineer</p>
+    <p class="subtitle">
+      Building scalable Java applications and clean web experiences with
+      Spring Boot, MySQL, and modern frontend tools.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="https://github.com/HaleemDevop" target="_blank" class="btn ghost">GitHub</a>
+    </div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About</h2>
+    <div class="card">
+      <p>
+        Computer Science Engineering graduate with hands-on experience in Java full stack
+        development and database-driven applications. Proficient in Java, Spring Boot,
+        Hibernate, JDBC, MySQL, REST APIs, HTML, CSS, and JavaScript. Seeking an
+        entry-level software engineering role to contribute to production-ready systems.
+      </p>
+    </div>
+  </section>
 
-<div class="container my-5">
-  <div class="row g-4 portfolio-grid">
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>B.E. Computer Science and Engineering</h3>
+        <p>Arasu Engineering College, Kumbakonam</p>
+        <span class="muted">2021 – 2025 • CGPA: 7.5</span>
+      </div>
+      <div class="card">
+        <h3>HSC – Computer Science</h3>
+        <p>Good Samaritan Matric Higher Secondary School</p>
+        <span class="muted">2019 – 2021 • 86%</span>
+      </div>
+    </div>
+  </section>
 
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card">
-        <h2>About Me</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="grid-2">
+
+      <div class="project card">
+        <h3>Online Exam Management System</h3>
         <p>
-          Computer Science Engineering graduate with hands-on experience in
-          Java Full Stack development, building scalable backend systems and
-          modern UI components.
+          Java-based platform with admin and user roles, automated evaluation,
+          and MySQL integration using JDBC.
         </p>
-      </section>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card">
-        <h2>Technical Skills</h2>
-        <div class="chips">
-          <span>Java</span><span>Spring Boot</span><span>Hibernate</span>
-          <span>JDBC</span><span>REST APIs</span><span>MySQL</span>
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          <span>Git & GitHub</span>
+        <div class="project-actions">
+          <a href="https://github.com/HaleemDevop/online-exam-management-system" target="_blank">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
 
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card">
-        <h2>Projects</h2>
+      <div class="project card">
         <h3>Banking Management System</h3>
-        <ul>
-          <li>Spring Boot application with role-based access</li>
-          <li>Integrated MySQL and REST APIs</li>
-        </ul>
-      </section>
+        <p>
+          Spring Boot backend for account and transaction management with
+          Hibernate ORM and validation.
+        </p>
+        <div class="project-actions">
+          <a href="https://github.com/HaleemDevop/banking-management-system" target="_blank">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="https://haleemdevop.github.io/banking-management-system/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <div class="project card">
+        <h3>Library Management System</h3>
+        <p>
+          JDBC-based system to automate inventory and book issue workflows,
+          reducing manual records.
+        </p>
+        <div class="project-actions">
+          <a href="https://github.com/HaleemDevop/library-management-system" target="_blank">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="https://haleemdevop.github.io/library-management-system/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <div class="project card">
+        <h3>Online Food Ordering System</h3>
+        <p>
+          Responsive frontend with dynamic cart operations and pricing logic
+          using HTML, CSS, and JavaScript.
+        </p>
+        <div class="project-actions">
+          <a href="https://github.com/HaleemDevop/online-food-ordering" target="_blank">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+          <a href="https://haleemdevop.github.io/online-food-ordering/" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+
+    <div class="card">
+      <h3>Vebbox Software Solutions — Software Development Intern</h3>
+      <span class="muted">Jan 2024 – Jun 2024</span>
+      <ul>
+        <li>Contributed to 6 Java-based application modules.</li>
+        <li>Integrated backend services with MySQL using JDBC.</li>
+        <li>Resolved 20+ functional and data-related issues.</li>
+      </ul>
     </div>
 
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card">
-        <h2>Academic Project</h2>
-        <h3>AR Learning Model</h3>
-        <ul>
-          <li>Interactive AR-based education system</li>
-          <li>Improved student engagement & visualization</li>
-        </ul>
-      </section>
+    <div class="card">
+      <h3>SD Pro Solution — Web Technology Intern</h3>
+      <span class="muted">Jun 2024 – Jul 2024</span>
+      <ul>
+        <li>Built responsive pages using HTML, CSS, and JavaScript.</li>
+        <li>Improved UI consistency and accessibility.</li>
+      </ul>
     </div>
+  </section>
 
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card">
-        <h2>Internship</h2>
-        <h3>Vebbox Software Solutions</h3>
-        <p><strong>Jan 2024 – Jun 2024</strong></p>
-        <ul>
-          <li>Worked on 6 Java-based application modules</li>
-          <li>Used Spring Boot, JDBC & MySQL</li>
-        </ul>
-      </section>
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="grid-3">
+      <div class="card">Java Full Stack – Vebbox Software Solutions</div>
+      <div class="card">Web Technology Internship – SD Pro Solution</div>
+      <div class="card">AR Learning Model – College</div>
+      <div class="card">
+        <a href="https://github.com/HaleemDevop/Certificates" target="_blank">
+          View All Certificates <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
     </div>
+  </section>
 
-    <div class="col-lg-4 col-md-6">
-      <section class="floating-card contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a></p>
-        <p>Phone: 8610866166</p>
-        <p>GitHub: <a href="https://github.com/HaleemDevop" target="_blank">github.com/HaleemDevop</a></p>
-      </section>
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:haleemdevops@gmail.com">haleemdevops@gmail.com</a></p>
+      <p>Phone: +91 8610866166</p>
+      <p>
+        <a href="https://github.com/HaleemDevop" target="_blank">GitHub</a> •
+        <a href="https://www.linkedin.com/in/haleem29/" target="_blank">LinkedIn</a> •
+        <a href="https://www.geeksforgeeks.org/profile/haleem9048f" target="_blank">GeeksforGeeks</a>
+      </p>
     </div>
+  </section>
 
-  </div>
-</div>
-  <footer>© 2026 Mohamed Haleem J</footer>
+  <footer class="footer">© 2026 Mohamed Haleem J</footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
