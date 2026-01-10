@@ -1,144 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Inter",sans-serif}
 
-body {
+body{
   background: radial-gradient(1200px 600px at 10% 10%, #1e293b 0%, #020617 60%);
-  color: #e5e7eb;
-  min-height: 100vh;
-  overflow-x: hidden;
+  color:#e5e7eb;
+  min-height:100vh;
+  overflow-x:hidden;
 }
 
-/* SaaS animated background */
+/* Live SaaS background */
 .bg-orbs::before,
-.bg-orbs::after {
-  content: "";
-  position: fixed;
-  inset: -20%;
+.bg-orbs::after{
+  content:"";
+  position:fixed;
+  inset:-20%;
   background:
     radial-gradient(circle at 20% 30%, rgba(56,189,248,.15), transparent 40%),
     radial-gradient(circle at 80% 70%, rgba(99,102,241,.12), transparent 45%),
     radial-gradient(circle at 50% 50%, rgba(16,185,129,.08), transparent 50%);
-  animation: drift 25s linear infinite;
-  z-index: -1;
+  animation: drift 30s linear infinite;
+  z-index:-1;
 }
-
-.bg-orbs::after {
-  animation-duration: 40s;
-  filter: blur(40px);
-}
-
-@keyframes drift {
-  from { transform: translateY(0) rotate(0deg); }
-  to   { transform: translateY(-200px) rotate(360deg); }
-}
+.bg-orbs::after{animation-duration:50s;filter:blur(40px)}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-200px)}}
 
 /* HERO */
-.hero {
-  text-align: center;
-  padding: 4rem 1rem 2rem;
+.hero{text-align:center;padding:4rem 1rem 2rem}
+.hero h1{
+  font-size:clamp(2rem,5vw,3.5rem);
+  font-weight:800;
+  letter-spacing:-.04em;
+  background:linear-gradient(90deg,#38bdf8,#a78bfa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero .role{margin-top:.5rem;color:#cbd5f5}
+.hero .stack{margin-top:.4rem;font-size:.95rem;color:#94a3b8}
+
+/* Cards */
+.floating-card{
+  height:100%;
+  background:rgba(255,255,255,.06);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:1.5rem;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+  transform:translateY(20px);
+  opacity:0;
+  animation:enter .8s ease forwards;
+}
+@keyframes enter{to{transform:none;opacity:1}}
+
+.floating-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 40px 120px rgba(56,189,248,.25);
 }
 
-.hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  background: linear-gradient(90deg, #38bdf8, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero .role {
-  margin-top: .5rem;
-  color: #cbd5f5;
-  font-weight: 500;
-}
-
-.hero .stack {
-  margin-top: .4rem;
-  font-size: .95rem;
-  color: #94a3b8;
-}
-
-/* ROTATION SYSTEM */
-.wrapper {
-  perspective: 1200px;
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0;
-}
-
-.inner {
-  position: relative;
-  width: 340px;
-  height: 340px;
-  transform-style: preserve-3d;
-  animation: spin 40s linear infinite;
-}
-
-.wrapper:hover .inner {
-  animation-play-state: paused;
-}
-
-@keyframes spin {
-  from { transform: rotateY(0deg); }
-  to   { transform: rotateY(360deg); }
-}
-
-.card {
-  position: absolute;
-  inset: 0;
-  transform:
-    rotateY(calc(var(--index) * (360deg / var(--quantity))))
-    translateZ(260px);
-}
-
-.floating-card {
-  background: rgba(255,255,255,0.06);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 18px;
-  padding: 1.4rem;
-  height: 100%;
-  box-shadow: 0 30px 80px rgba(0,0,0,.6);
-  transition: transform .4s ease, box-shadow .4s ease;
-}
-
-.card:hover .floating-card {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 40px 120px rgba(56,189,248,.25);
-}
-
-.floating-card h2 {
-  font-size: 1.1rem;
-  margin-bottom: .6rem;
-  color: #f8fafc;
-}
-
+.floating-card h2{font-size:1.1rem;margin-bottom:.6rem}
 .floating-card p,
-.floating-card li {
-  font-size: .85rem;
-  color: #cbd5e1;
+.floating-card li{font-size:.85rem;color:#cbd5e1}
+
+.chips span{
+  display:inline-block;
+  margin:4px 6px 0 0;
+  padding:4px 10px;
+  border-radius:999px;
+  background:rgba(56,189,248,.15);
+  color:#7dd3fc;
+  font-size:.72rem;
 }
 
-.chips span {
-  display: inline-block;
-  margin: 4px 6px 0 0;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(56,189,248,.15);
-  color: #7dd3fc;
-  font-size: .72rem;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: #64748b;
-  font-size: .8rem;
-}
+footer{text-align:center;padding:2rem;color:#64748b;font-size:.8rem}
