@@ -16,12 +16,10 @@ cards.forEach(card => {
   observer.observe(card);
 });
 
-// Mouse parallax background
-const bg = document.querySelector(".bg-gradient");
+// Cursor-follow glow
+const glow = document.querySelector(".cursor-glow");
 
 document.addEventListener("mousemove", e => {
-  const x = (e.clientX / window.innerWidth - 0.5) * 40;
-  const y = (e.clientY / window.innerHeight - 0.5) * 40;
-
-  bg.style.transform = `translate(${x}px, ${y}px)`;
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
 });
