@@ -1,15 +1,16 @@
-document.querySelectorAll(".card").forEach(card => {
+document.querySelectorAll(".floating-card").forEach((card, i) => {
+  card.style.animationDelay = `${i * 0.1}s`;
+
   card.addEventListener("mousemove", e => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    const rx = -(y - rect.height / 2) / 18;
-    const ry = (x - rect.width / 2) / 18;
-    card.querySelector(".floating-card").style.transform =
-      `rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+    const r = card.getBoundingClientRect();
+    const x = e.clientX - r.left;
+    const y = e.clientY - r.top;
+    const rx = -(y - r.height / 2) / 25;
+    const ry = (x - r.width / 2) / 25;
+    card.style.transform = `translateY(-10px) rotateX(${rx}deg) rotateY(${ry}deg)`;
   });
 
   card.addEventListener("mouseleave", () => {
-    card.querySelector(".floating-card").style.transform = "";
+    card.style.transform = "";
   });
 });
