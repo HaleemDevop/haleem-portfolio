@@ -168,3 +168,24 @@ body {
   padding: 2rem;
   color: #64748b;
 }
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.25),
+    rgba(147, 197, 253, 0.15),
+    transparent 70%
+  );
+  filter: blur(40px);
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s linear;
+  z-index: -1;
+}
+
+
